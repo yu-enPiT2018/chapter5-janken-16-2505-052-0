@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/choki"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="8dp"
@@ -27,18 +27,39 @@
         android:id="@+id/gu"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/gu"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintEnd_toStartOf="@+id/choki"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/gu" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/pa"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/pa"
-        tools:layout_editor_absoluteX="268dp"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintStart_toEndOf="@+id/choki"
+        app:layout_constraintTop_toTopOf="@+id/choki"
+        app:srcCompat="@drawable/pa" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/janken_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/choki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
